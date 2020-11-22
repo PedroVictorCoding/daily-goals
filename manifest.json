@@ -1,0 +1,27 @@
+{
+
+    "manifest_version": 2,
+    "name": "Xel",
+    "version": "1.0",
+  
+    "description": "Control your daily goals/ habits",
+  
+    "icons": {
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "browser_action":{
+        "default_popup": "popup.html",
+        "title": "Xel"
+
+    },
+    "background": {
+        "scripts": ["background.js"]        
+    }
+  
+  }
